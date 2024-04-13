@@ -29,7 +29,7 @@ python main.py --input_video=./input/input_video.mp4
 Check out the demo video [here](https://youtu.be/Vl0ZF66hFcE?si=X3O9Oh0e7YxdYgWA).
 
 ## Limitations
-It only works with a couple of video formats. You are better off using `.mp4` as the input format. It might miss a couple of things but the model is fairly accurate. Since we're using the larget Whisper model to highest accuracy, it may be slow. On an M2 Pro (12-Core), it takes about 6s per 1s of video. It hasn't been tested on CUDA yet.
+It only works with a couple of video formats. You are better off using `.mp4` as the input format. It might miss a couple of things but the model is fairly accurate. Since we're using the larget Whisper model for highest accuracy, it may be slow. On an M2 Pro (12-Core), it takes about 6s per 1s of video. It hasn't been tested on CUDA yet.
 
 ## Contributions
 I won't be working on this actively, but contributions are welcome.
