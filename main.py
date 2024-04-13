@@ -131,7 +131,7 @@ def attach_censored_audio_with_video(
     output_video_path = input_video_path.replace(".mp4", "_censored.mp4")
     target_audio = AudioFileClip(censored_audio_path)
     output_video = video.set_audio(target_audio)
-    output_video.write_videofile(output_video_path)
+    output_video.write_videofile(output_video_path, codec="libx264", audio_codec="aac")
     video.close()
     target_audio.close()
     output_video.close()

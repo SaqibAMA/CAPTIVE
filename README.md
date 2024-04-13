@@ -25,6 +25,9 @@ python3 main.py --input_video=<path_to_your_video>
 python main.py --input_video=./input/input_video.mp4
 ```
 
+## Example Output
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vl0ZF66hFcE?si=fXRDqT9LCzZDHeBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Limitations
 It only works with a couple of video formats. You are better off using `.mp4` as the input format. It might miss a couple of things but the model is fairly accurate. Since we're using the larget Whisper model to highest accuracy, it may be slow. On an M2 Pro (12-Core), it takes about 6s per 1s of video. It hasn't been tested on CUDA yet.
 
