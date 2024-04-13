@@ -146,8 +146,6 @@ if __name__ == "__main__":
     audio_transcription = transcribe_audio(extracted_audio_path)
     censored_transcription = censor_transcription(audio_transcription)
     censored_audio_path = censor_audio(extracted_audio_path, censored_transcription)
-    output_video_path = attach_censored_audio_with_video(
-        censored_audio_path, args.input_video
-    )
+    attach_censored_audio_with_video(censored_audio_path, args.input_video)
 
     print("Done!")
